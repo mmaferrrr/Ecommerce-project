@@ -61,12 +61,16 @@ function validateContactForm() {
     
                 const productDescription = document.createElement('p');
                 productDescription.textContent = product.description;
+
+                const productButton = document.createElement('button');
+                productButton.textContent = product.button;
                 
 
                 productDiv.appendChild(productImg);
                 productDiv.appendChild(productTitle);
                 productDiv.appendChild(productPrice);
                 productDiv.appendChild(productDescription);
+                productDiv.appendChild(productButton);
                 productContainer.appendChild(productDiv);
             });
         });

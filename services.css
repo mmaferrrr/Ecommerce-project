@@ -6,17 +6,32 @@
 }
 
 .product-div {
-    margin: 100px 30px 100px 30px;
+    margin: 50px 30px 50px 30px;
     box-shadow: 5px 5px 5px 5px rgba(219, 95, 149, 0.5);
     transition: box-shadow 0.3s ease;
 }
 
 .product-div:hover {
     box-shadow: 10px 10px 10px 12px rgba(193, 52, 113, 0.5);
-      }
+}
+
+.product-div p,h2 {
+    padding:20px
+}
 
 .productContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
+
+button {
+    font-size: 20px;
+    background-color: #cb697f;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 100px 100px 50px;
+}
+
