@@ -21,6 +21,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: #fafaf8;
+    width: 100vw;
 }
 
 .navbar ul {
@@ -36,6 +37,15 @@ a {
     width: 200px;
     height: 200px;
 }
+
+
+.hero-video {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+ 
 
 /*Explore buttons */
 .explore-bycategory-btn {
@@ -67,36 +77,41 @@ a {
 /* About me container */
 #three-cards {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    height: 70vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
-.about-me-container {
+
+.card-container {
     background-color: rgb(236, 159, 171);
-    height: 500px;
-    width: 500px;
-    margin: 100px 50px;
+    height: 70%;
+    width: 80%;
+    margin: 0 30px;
     box-shadow: 5px 5px 5px 5px rgba(219, 95, 149, 0.5);
     transition: box-shadow 0.3s ease;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.about-me-container:hover {
+.card-container:hover {
   box-shadow: 15px 10px 10px 15px rgba(237, 78, 147, 0.5);
 }
 
-.about-me-container h2 {
+.card-container h2 {
   font-size: 30px;
   color:white;
-  margin-left:150px;
-  padding-top: 30px;
 }
 
-.about-me-image {
+.card-image {
   height: 300px;
   width: 300px;
   border-radius: 200px;
-  margin: 0 90px;
 }
 
 .about-me-btn {
@@ -107,65 +122,6 @@ a {
   cursor: pointer;
   border-radius: 3px;
   padding: 10px;
-  margin: 10px 150px;
-}
-
-/* Services container */
-.services-container {
-  background-color: rgb(236, 159, 171);
-  height: 500px;
-  width: 500px;
-  margin-right: 40px;
-  box-shadow: 5px 5px 5px 5px rgba(219, 95, 149, 0.5);
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.services-container:hover {
-  box-shadow: 15px 10px 10px 15px rgba(237, 78, 147, 0.5);
-}
-
-.services-container h2 {
-  font-size: 30px;
-  color:white;
-  margin-left:150px;
-  padding-top: 30px;
-}
-
-.services-image {
-  height: 300px;
-  width: 300px;
-  border-radius: 200px;
-  margin: 0 90px;
-}
-
-/* Contact container */
-.contact-container {
-  background-color: rgb(236, 159, 171);
-  height: 500px;
-  width: 500px;
-  margin-right: 40px;
-  box-shadow: 5px 5px 5px 5px rgba(219, 95, 149, 0.5);
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.contact-container:hover {
-  box-shadow: 15px 10px 10px 15px rgba(237, 78, 147, 0.5);
-}
-
-.contact-container h2 {
-  font-size: 30px;
-  color:white;
-  margin-left:150px;
-  padding-top: 30px;
-}
-
-.contact-image {
-  height: 300px;
-  width: 300px;
-  border-radius: 200px;
-  margin: 0 90px;
 }
 
 /* About me section */
@@ -181,19 +137,16 @@ a {
 .about-container, .safety-container, .aftercare-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 600px;
+  justify-content: center;
+  height: 100%;
   width: 100vw;
   font-size: 20px;
-  padding: 40px;
 }
-
-.about-text, .aftercare-text{
-  margin-left: 100px;
+.about-text, .aftercare-text {
+  margin-right: 30px;
 }
-
-.safety-text{
-  margin-right: 130px;
+.safety-text {
+  margin-left: 30px;
 }
 
 .about-text p, 
@@ -218,6 +171,7 @@ width: 85vmin;
 /*  Footer*/
 footer{
   background-color:rgb(192, 89, 106);
+  width: 100vw;
 }
 
 
@@ -281,104 +235,54 @@ footer{
 
 
 /*media queries for devidess less than 800px */
-  @media screen and (max-width: 800px) {
-  
-  .navbar ul {
-    display: none;
-  }
-
+@media (max-width: 1440px){
   .hero-video {
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    width: 80%;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: repeat(3, 1fr);
   }
-
-
-  .explore-bycategory-btn {
-    margin-left: 240px;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
   #three-cards {
-    display: flex;
+    justify-content: center;
+  }
+  .card-container {
+    width: 20%;
+    height: 50%;
+  }
+  .card-image {
+    height: 150px;
+    width: 150px;
+  }
+  .about-container, .aftercare-container {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .about-container, .aftercare-container, .safety-container img {
+    margin: 10px 0;
+  }
+  .safety-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
   }
 
-.services-container {
-  margin-bottom: 100px;
+  .aftercare-container button {
+    margin: 20px 0;
+
+  }
+  
 }
 
-    .social-icons {
-        align-items: center;
-        margin-left: 25px;
-    }
-    
-    .footer-nav {
-        margin: 20px 5px 20px 70px;
-    }
 
-    footer {
-      height: auto;
-      width: 78%;
-    }
 
-    .footer-container {
-      height: 300px;
-      width: 78%;
+ @media (max-width: 1024px){
+  .card-container {
+
   }
 
-  .footer-bottom {
-    height: 50px;
-    width:96%;
-  }
-    }
-    
-    /* Media queries for screens greater than 800px */
-     @media only screen and (min-width: 801px) and (max-width:1200px) {
-      .hero-video {
-        display:grid;
-        height: 80%;
-        width: 80%;
-      }
-    
-    
-      .explore-bycategory-btn {
-        margin-left: 240px;
-        padding: 20px;
-        border-radius: 10px;
-      }
-    
-      #three-cards {
-        display: flex;
-        flex-direction: column;
-      }
-    
-    .services-container {
-      margin-bottom: 100px;
-    }
-    
-         .social-icons {
-            margin-left: 20px;
-        }
-        
-        .footer-nav {
-            margin: 20px 10px 20px 70px;
-        }
-    
-        footer {
-          height: auto;
-          width:115%;
-        }
-    
-        .footer-container {
-          height: 300px;
-          width: 78%;
-      }
-    
-      .footer-bottom {
-        height: 40px;
-        width:97.5%;
-      }
-    }
+
+
+
+
+ }
