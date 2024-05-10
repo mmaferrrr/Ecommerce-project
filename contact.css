@@ -1,0 +1,42 @@
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+}
+
+.form-container, .form--name,.form--phone, .form--email, .form--message {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: rgb(236, 159, 171);
+    border-radius: 10px;
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 25px;
+  }
+  
+  input, textarea {
+    width: 20rem;
+    padding: 18px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+  }
+  
+  #submit {
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    background-color:#cb697f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #submit:hover {
+    background-color: #c13c6b;
+  }

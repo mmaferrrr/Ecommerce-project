@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafaf8;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    margin: 50px;
+}
+
+.nav-logo {
+    width: 200px;
+    height: 200px;
+}
+
+/*Explore buttons */
+.explore-bycategory-btn {
+    font-size: 20px;
+    background-color: #cb697f;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 40px 700px;
+    padding: 10px;
+}
+
+.explore-bycategory-btn:hover,
+.explore-more-btn:hover {
+  background-color: #f095a9;
+}
+
+.explore-more-btn {
+  font-size: 20px;
+  background-color: #cb697f;
+  border:none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+/* About me container */
+#three-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-me-container {
+    background-color: rgb(236, 159, 171);
+    height: 500px;
+    width: 500px;
+    margin: 100px 50px;
+    box-shadow: 5px 5px 5px 5px rgba(219, 95, 149, 0.5);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.about-me-container:hover {
+  box-shadow: 15px 10px 10px 15px rgba(237, 78, 147, 0.5);
+}
+
+.about-me-container h2 {
+  font-size: 30px;
+  color:white;
+  margin-left:150px;
+  padding-top: 30px;
+}
+
+.about-me-image {
+  height: 300px;
+  width: 300px;
+  border-radius: 200px;
+  margin: 0 90px;
+}
+
+.about-me-btn {
+  font-size: 18px;
+  background-color: #cb697f;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px 150px;
+}
+
+/* Services container */
+.services-container {
+  background-color: rgb(236, 159, 171);
+  height: 500px;
+  width: 500px;
+  margin-right: 40px;
+  box-shadow: 5px 5px 5px 5px rgba(219, 95, 149, 0.5);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.services-container:hover {
+  box-shadow: 15px 10px 10px 15px rgba(237, 78, 147, 0.5);
+}
+
+.services-container h2 {
+  font-size: 30px;
+  color:white;
+  margin-left:150px;
+  padding-top: 30px;
+}
+
+.services-image {
+  height: 300px;
+  width: 300px;
+  border-radius: 200px;
+  margin: 0 90px;
+}
+
+/* Contact container */
+.contact-container {
+  background-color: rgb(236, 159, 171);
+  height: 500px;
+  width: 500px;
+  margin-right: 40px;
+  box-shadow: 5px 5px 5px 5px rgba(219, 95, 149, 0.5);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-container:hover {
+  box-shadow: 15px 10px 10px 15px rgba(237, 78, 147, 0.5);
+}
+
+.contact-container h2 {
+  font-size: 30px;
+  color:white;
+  margin-left:150px;
+  padding-top: 30px;
+}
+
+.contact-image {
+  height: 300px;
+  width: 300px;
+  border-radius: 200px;
+  margin: 0 90px;
+}
+
+/* About me section */
+#about-section {
+  width: 100vw;
+  overflow: hidden;
+}
+
+#about-section h2 {
+  border-bottom: 3px solid #cb697f;
+}
+
+.about-container, .safety-container, .aftercare-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 600px;
+  width: 100vw;
+  font-size: 20px;
+  padding: 40px;
+}
+
+.about-text, .aftercare-text{
+  margin-left: 100px;
+}
+
+.safety-text{
+  margin-right: 130px;
+}
+
+.about-text p, 
+.safety-text p, .aftercare-text p{
+width: 85vmin;
+}
+
+.about-image, .tools-image, .aftercare-image {
+  width: 500px;
+  height: 500px;
+  border-radius: 5px;
+}
+
+.about-image, .aftercare-image {
+  margin-right: 100px;
+}
+
+.tools-image {
+  margin-left: 70px;
+}
+
+/*  Footer*/
+footer{
+  background-color:rgb(192, 89, 106);
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  width:100%;
+  padding-top: 50px;
+}
+
+.social-icons img {
+  padding:8px;
+  background-color: lightpink;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.footer-nav li a {
+  color: white;
+  margin: 0px 40px 0 10px;
+  font-size: 18px;
+  opacity: 0.7;
+  transition:0.5s;
+}
+
+.footer-nav li a:hover {
+  opacity: 1;
+}
+
+.footer-hours, .footer-location, .footer-contact {
+  color:white;
+  font-size: 15px;
+  margin-left: 80px;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  color:white;
+  background-color:rgb(178, 80, 96);
+  font-size: 15px;
+}
+
+
+
+/*media queries for devidess less than 800px */
+  @media screen and (max-width: 800px) {
+  
+  .navbar ul {
+    display: none;
+  }
+
+  .hero-video {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+  }
+
+
+  .explore-bycategory-btn {
+    margin-left: 240px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  #three-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+.services-container {
+  margin-bottom: 100px;
+}
+
+    .social-icons {
+        align-items: center;
+        margin-left: 25px;
+    }
+    
+    .footer-nav {
+        margin: 20px 5px 20px 70px;
+    }
+
+    footer {
+      height: auto;
+      width: 78%;
+    }
+
+    .footer-container {
+      height: 300px;
+      width: 78%;
+  }
+
+  .footer-bottom {
+    height: 50px;
+    width:96%;
+  }
+    }
+    
+    /* Media queries for screens greater than 800px */
+     @media only screen and (min-width: 801px) and (max-width:1200px) {
+      .hero-video {
+        display:grid;
+        height: 80%;
+        width: 80%;
+      }
+    
+    
+      .explore-bycategory-btn {
+        margin-left: 240px;
+        padding: 20px;
+        border-radius: 10px;
+      }
+    
+      #three-cards {
+        display: flex;
+        flex-direction: column;
+      }
+    
+    .services-container {
+      margin-bottom: 100px;
+    }
+    
+         .social-icons {
+            margin-left: 20px;
+        }
+        
+        .footer-nav {
+            margin: 20px 10px 20px 70px;
+        }
+    
+        footer {
+          height: auto;
+          width:115%;
+        }
+    
+        .footer-container {
+          height: 300px;
+          width: 78%;
+      }
+    
+      .footer-bottom {
+        height: 40px;
+        width:97.5%;
+      }
+    }

@@ -1,0 +1,85 @@
+[
+    {
+        "title": "Rubber Full Set- Short",
+        "image": "images/shortnails.png",
+        "price": "STARTING AT $40",
+        "description": "Includes a dry manicure, cuticle clean up and color of chice. Add ons are extra."
+    },
+
+    {
+        "title": "Rubber Full Set- Medium",
+        "image": "images/medium-rubber-nails.png",
+        "price": "STARTING AT $45",
+        "description": "Includes a dry manicure, cuticle clean up and color of chice. Add ons are extra."
+    },
+
+    {
+        "title": "Rubber Full Set- Long",
+        "image": "images/long-nailsrubber.png",
+        "price": "STARTING AT $50",
+        "description": "Includes a dry manicure, cuticle clean up and color of chice. Add ons are extra."
+    },
+
+    {
+        "title": "Polygel Full Set- Short",
+        "image": "images/short-nailspoly.png",
+        "price":"STARTING AT $40",
+        "description":"Includes a dry manicure, cuticle clean up and color of chice. Add ons are extra."
+    },
+
+    {
+        "title":"Polygel Full Set- Medium",
+        "image": "images/medium-nails.png",
+        "price":"STARTING AT $45",
+        "description":"Includes a dry manicure, cuticle clean up and color of chice. Add ons are extra."
+    },
+
+    {
+        "title":"Polygel Full Set- Long",
+        "image": "images/long-nails.png",
+        "price":"STARTING AT $50",
+        "description":"Includes a dry manicure, cuticle clean up and color of chice. Add ons are extra."
+    },
+
+    {
+        "title":"Structured Gel Overlay on Natural Nails",
+        "image": "images/overlay.png",
+        "price":"STARTING AT $40",
+        "description":"Perfect for clients who wish to grow their natural nils out. Inlcudes a dry manicure. Add ons are extra."
+    },
+
+    {
+        "title":"Gentleman Manicure",
+        "image": "images/gentleman-manicure.png",
+        "price":"STARTING AT $30",
+        "description":"Includes manicure, cuticle clean up, hand massage, clear nail polish."
+    },
+
+    {
+        "title":"Cuticle Oil Rose Scent",
+        "image": "images/cuticle-oil-rose.png",
+        "price":"$8.99",
+        "description":"Floral notes paired with vitamin E, almond, and jojoba oil create a moisturizing, softening, and luxurious blend that will leave your skin soft, hydrated, and sweetly scented of roses."
+    },
+
+    {
+        "title":"Cuticle Oil Lavender Scent",
+        "image": "images/cuticle-oil-lavender.png",
+        "price":"$8.99",
+        "description":"The sweet scent of lavender will give a soothing effect on the skin and nails. The relaxing lavender oil will moisturize the cuticle and help restore the natural flexibility of the nail."
+    },
+
+    {
+        "title":"Cuticle Oil Natural Scent",
+        "image": "images/cuticle-oil-natural.png",
+        "price":"$8.99",
+        "description":"The distinctive combination of Sweet Almond oil and Jojoba oils seal in moisture and aid in rehydrating and revitalizing cuticles and nails after a manicure."
+    },
+
+    {
+        "title":"O.P.I Cuticle Oil",
+        "image":"images/cuticle-oil.png",
+        "price":"$15",
+        "description":"Includes rich yet lightweight grape seed, sesame, kukui, sunflower & cupuaçu oils that provide the ultimate in moisture."
+    }
+]
