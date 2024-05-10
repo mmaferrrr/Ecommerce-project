@@ -34,10 +34,11 @@
     margin: 0 auto;
     height: auto;
     margin-bottom: 70px;
+    text-align: center;
 }
 
 .product-div button {
-    font-size: 1.4;
+    font-size: 1.3rem;
     background-color: #cb697f;
     border: none;
     color: white;
