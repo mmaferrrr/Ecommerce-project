@@ -44,15 +44,17 @@ a {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
 }
 
-/*Explore buttons */
+/*Explore by category button */
 .explore-btn {
   margin: 40px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .explore-bycategory-btn {
   font-size: 1.2rem;
   background-color: #cb697f;
@@ -68,17 +70,7 @@ a {
   background-color: #f095a9;
 }
 
-.explore-more-btn {
-  font-size: 20px;
-  background-color: #cb697f;
-  border:none;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-/* About me container */
+/* Three card */
 #three-cards {
     display: flex;
     justify-content: space-between;
@@ -90,7 +82,7 @@ a {
 
 .card-container {
   background-color: rgb(236, 159, 171);
-  height: auto;
+  height: 50%;
   width: 80%;
   max-width: 400px;
   margin: 0 5%;
@@ -121,7 +113,7 @@ a {
   border-radius: 50%; 
 }
 
-.about-me-btn {
+.explore-more-btn {
   font-size: 18px;
   background-color: #cb697f;
   border: none;
@@ -129,10 +121,11 @@ a {
   cursor: pointer;
   border-radius: 3px;
   padding: 10px;
+  margin-top: 10px;
   display: flex ;
 }
 
-/* About me section */
+/* About section */
 #about-section {
   width: 100vw;
   overflow: hidden;
@@ -181,7 +174,6 @@ footer{
   background-color:rgb(192, 89, 106);
   width: 100vw;
 }
-
 
 .social-icons {
   display: flex;

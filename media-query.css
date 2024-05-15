@@ -38,10 +38,6 @@
   
 }
 
-
-
-
-
  @media (max-width: 1024px){
     .productContainer{
         grid-template-columns: 1fr 1fr;
@@ -98,4 +94,4 @@
     .about-text{
         width: 75vmin;
     }
-}
+  }
