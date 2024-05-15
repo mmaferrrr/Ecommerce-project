@@ -1,5 +1,5 @@
 // Form Validation 
-function validateContactForm() {
+function validateContactForm(event) {
     event.preventDefault();
  
     let finalAlert = "Error: ";
@@ -10,28 +10,34 @@ function validateContactForm() {
     let emailRegex = /^\S+@\S+\.\S+$/;
     
     let name = document.forms["contact-form"]["name"].value;
+    // During valivation
     if (name === "" || !nameRegex.test(name)) {
         finalAlert += "Enter a valid name.\n";
     }
 
     let phoneNumber = document.forms["contact-form"]["phoneNumber"].value;
+    // More validation
     if (phoneNumber === "" || !phoneNumberRegex.test(phoneNumber)) {
         finalAlert += "Enter a valid phone number (10 digits).\n";
     }
  
     let email = document.forms["contact-form"]["email"].value;
+    // More validation
     if (email === "" || !emailRegex.test(email)) {
         finalAlert += "Enter a valid email.\n";
     }
 
     let message = document.forms["contact-form"]["message"].value;
+    // More validation
     if (message === "") {
         finalAlert += "Enter a message.\n";
     }
  
     if (finalAlert === "Error: ") {
+        //Submit the form if there are no errors
         document.forms["contact-form"].submit();
     } else {
+        // Display all collected error messages in a single alert box. Helps users
         alert(finalAlert);
     }
 }
