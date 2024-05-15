@@ -1,4 +1,3 @@
-/* media queries for devidess less than 800px */ 
 @media (max-width: 1440px){
   .hero-video {
     grid-template-rows: 1fr 1fr ;

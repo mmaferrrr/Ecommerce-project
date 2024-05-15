@@ -1,4 +1,5 @@
 // Form Validation 
+// This prevents the form from being submitted immediately upon clicking the submit button.
 function validateContactForm(event) {
     event.preventDefault();
  
